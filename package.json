@@ -1,0 +1,33 @@
+{
+  "name": "electric-eye",
+  "version": "1.0.0",
+  "description": "A desktop video chat application for friends who want to socialize.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify -t babelify index.js -o main.js",
+    "start": "electron .",
+    "bundle": "browserify -t babelify -t app/app.js -o public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisJVoss/electric-eye.git"
+  },
+  "author": "",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "electron": "^1.6.11"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisJVoss/electric-eye/issues"
+  },
+  "homepage": "https://github.com/ChrisJVoss/electric-eye#readme"
+}

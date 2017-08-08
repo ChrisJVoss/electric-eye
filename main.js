@@ -1,0 +1,21 @@
+const {app, BrowserWindow} = require('electron')
+const path = require('path')
+const url = require('url')
+let mainWindow = null
+
+function createWindow() {
+  mainWindow = new BrowserWindow({
+    width: 640,
+    height: 480
+  })
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file:',
+    slashes: true
+  }))
+  mainWindow.on('closed', () => {
+    mainWindow = null
+  })
+}
+
+app.on('ready', createWindow)

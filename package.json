@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "browserify -t babelify index.js -o main.js",
     "start": "electron .",
-    "bundle": "browserify -t babelify -t app/app.js -o public/bundle.js"
+    "bundle": "browserify -t babelify ./app/app.js -o ./public/bundle.js"
   },
   "repository": {
     "type": "git",

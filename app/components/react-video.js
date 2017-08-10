@@ -3,7 +3,10 @@ import React from 'react'
 export default class WebCam extends React.Component {
   media() {
     navigator.mediaDevices.getUserMedia({
-    video: true,
+    video: {
+      width: 1280,
+      height: 720
+    },
     audio: false
     })
     .then(function(stream) {
@@ -16,7 +19,7 @@ export default class WebCam extends React.Component {
   }
   render() {
     return (
-      <video id="video" width="600" height="450">
+      <video className="video" id="video">
         {
           this.media()
         }

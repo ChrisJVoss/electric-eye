@@ -4,5 +4,5 @@ import Video from './components/react-video.js'
 
 ReactDOM.render(
   <Video />,
-  document.getElementById('react-container')
+  document.getElementById('video-container')
 )

@@ -5,9 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "browserify -t babelify index.js -o main.js",
-    "start": "electron .",
-    "bundle": "browserify -t babelify ./app/app.js -o ./public/bundle.js"
+    "bundle": "browserify -t babelify ./app/app.js -o ./public/bundle.js",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,9 @@
   },
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
   },
   "license": "ISC",
   "bugs": {

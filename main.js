@@ -5,11 +5,11 @@ let mainWindow = null
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 640,
-    height: 480
+    width: 800,
+    height: 600
   })
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'public/index.html'),
     protocol: 'file:',
     slashes: true
   }))

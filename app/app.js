@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Video from './components/react-video.js'
 
 ReactDOM.render(
-  <h2>React is working!</h2>,
+  <Video />,
   document.getElementById('react-container')
 )
